@@ -1,5 +1,6 @@
 import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
+import Button from "./components/Button";
 
 let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <div>
       <Alert>Hellow World</Alert>
+      <Button onClick={() => console.log("click")}>Test 123</Button>
       <ListGroup
         items={items}
         heading="Cities"
